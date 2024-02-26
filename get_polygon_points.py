@@ -115,8 +115,8 @@ def get_polygon_points(polygon_gpd):
 
 if '__main__' == __name__:
   
-    polygon_shapefile = r"D:\Weeeeeeb\New folder (2)\Parcels_SimplifyPolygon_22.shp"
-    POLYGON_ID_FEILD = 'parcel_no'
+    polygon_shapefile = r"path\to\Polygon.shp"
+    POLYGON_ID_FEILD = 'Polygon_ID'
     
     output_folder = os.path.dirname(polygon_shapefile)
     output_point_name = 'Points_' + os.path.basename(polygon_shapefile)
