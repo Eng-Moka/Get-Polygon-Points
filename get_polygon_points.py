@@ -116,9 +116,9 @@ def get_polygon_points(polygon_gdf):
 
 
 if '__main__' == __name__:
-  
+   
     POLYGON_SHAPEFILE = r"path\to\Polygon.shp"
-    POLYGON_ID_FIELD = 'Polygon_UID'
+    POLYGON_ID_FIELD = "Polygon_UID"
     
     output_folder = os.path.dirname(POLYGON_SHAPEFILE)
     output_point_name = 'Points_' + os.path.basename(POLYGON_SHAPEFILE)
@@ -129,5 +129,6 @@ if '__main__' == __name__:
         all_points_gdf = get_polygon_points(polygon_gdf)
         if not all_points_gdf.empty:
             all_points_gdf.to_file(output_point_path, driver='ESRI Shapefile')
+            print(f"Successfully Extracted polygon corners Point to the shapefile: {output_point_path}")
     else:
         print(f"{POLYGON_SHAPEFILE} is not a ESRI Shapefile.")
