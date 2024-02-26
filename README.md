@@ -48,8 +48,8 @@ Calculates the shift value based on the maximum Y-coordinate point ID.
 
 ## Files
 
-- `your_code_file.py`: Python script containing the main code.
-- `Points_(your polygon name).shp`: Output shapefile containing the extracted points.
+- `get_polygon_points.py`: Python script containing the main code.
+
 
 ## Contributing
 
